@@ -367,7 +367,7 @@ This is the easiest mode for development.
 ### Step 1: Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/aegis-sre-self-healing-agent.git
+git clone https://github.com/vedantjhunjhunwal/aegis-sre-self-healing-agent.git
 cd aegis-sre-self-healing-agent
 ```
 
