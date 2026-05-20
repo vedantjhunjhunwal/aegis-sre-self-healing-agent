@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: checkout-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: checkout-api
+  template:
+    metadata:
+      labels:
+        app: checkout-api
+    spec:
+      containers:
+        - name: checkout-api
+          image: checkout-api:local
+          imagePullPolicy: IfNotPresent
+          command: ["python", "-m", "pytest", "-q"]
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: checkout-api
+spec:
+  selector:
+    app: checkout-api
+  ports:
+    - port: 80
+      targetPort: 8080
