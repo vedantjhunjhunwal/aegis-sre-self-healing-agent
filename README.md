@@ -734,21 +734,8 @@ Planned upgrades:
 * Automated rollback recommendation
 * More incident types such as memory leak, CPU spike, and database timeout
 
----
 
-## Resume Bullet
 
-**AegisSRE — Self-Healing Multi-Agent DevOps Reliability Engineer | LangGraph · LangChain · Kafka · Temporal · Qdrant · Neo4j · Prometheus · Kubernetes**
-
-* Built a self-healing AI SRE platform that detects production incidents, performs root-cause analysis using metrics, logs, traces, vector search, and code graph evidence, then generates verified code patches.
-* Designed a LangGraph-based multi-agent workflow with sandboxed test execution, Kubernetes-style validation, Red Team audit, GitHub PR automation, and human-in-the-loop approval.
-* Integrated real-infrastructure adapters for Kafka, Temporal, Qdrant, Neo4j, Prometheus, Grafana, GitHub API, and kind/minikube validation.
-
----
-
-## Interview Explanation
-
-> AegisSRE is a self-healing multi-agent DevOps reliability platform. When a production incident occurs, the system collects metrics, logs, traces, and pod state through an MCP-style observability bridge. It then uses Qdrant vector search and Neo4j code graph analysis to locate the likely root cause in the codebase. A software engineer agent applies a patch, runs tests, validates the behavior through Kubernetes-style integration checks, passes the patch through a Red Team audit, and finally generates a GitHub PR for human approval. The project demonstrates agentic AI, distributed systems, DevOps automation, observability, verification, and production-style engineering workflows.
 
 ---
 
